@@ -1,0 +1,69 @@
+{
+	"name": "@sapphire/phisherman",
+	"version": "1.4.2",
+	"description": "Wrapper around phisherman to easily check and report domains",
+	"author": "@sapphire",
+	"license": "MIT",
+	"main": "dist/cjs/index.cjs",
+	"module": "dist/esm/index.mjs",
+	"types": "dist/cjs/index.d.ts",
+	"exports": {
+		"import": {
+			"types": "./dist/esm/index.d.mts",
+			"default": "./dist/esm/index.mjs"
+		},
+		"require": {
+			"types": "./dist/cjs/index.d.ts",
+			"default": "./dist/cjs/index.cjs"
+		}
+	},
+	"homepage": "https://github.com/sapphiredev/utilities/tree/main/packages/phisherman",
+	"scripts": {
+		"lint": "eslint src --ext ts --fix",
+		"build": "tsup",
+		"docs": "typedoc-json-parser",
+		"prepack": "yarn build",
+		"bump": "cliff-jumper",
+		"check-update": "cliff-jumper --dry-run"
+	},
+	"dependencies": {
+		"@sapphire/fetch": "workspace:^"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sapphiredev/utilities.git",
+		"directory": "packages/phisherman"
+	},
+	"files": [
+		"dist/"
+	],
+	"engines": {
+		"node": ">=16.6.0",
+		"npm": ">=7.0.0"
+	},
+	"keywords": [
+		"sapphiredev",
+		"bot",
+		"typescript",
+		"ts",
+		"yarn",
+		"discord",
+		"sapphire",
+		"phisherman",
+		"scam",
+		"detection"
+	],
+	"bugs": {
+		"url": "https://github.com/sapphiredev/utilities/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@favware/cliff-jumper": "^2.2.3",
+		"tsup": "^8.0.1",
+		"typedoc": "^0.25.4",
+		"typedoc-json-parser": "^9.0.1",
+		"typescript": "^5.3.2"
+	}
+}

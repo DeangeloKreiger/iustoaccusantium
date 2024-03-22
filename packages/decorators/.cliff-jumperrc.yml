@@ -1,0 +1,4 @@
+name: decorators
+org: sapphire
+install: true
+packagePath: packages/decorators

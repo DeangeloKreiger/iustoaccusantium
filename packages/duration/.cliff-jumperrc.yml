@@ -1,0 +1,4 @@
+name: duration
+org: sapphire
+install: true
+packagePath: packages/duration

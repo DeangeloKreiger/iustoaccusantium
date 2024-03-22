@@ -1,0 +1,4 @@
+name: node-utilities
+org: sapphire
+install: true
+packagePath: packages/node-utilities
